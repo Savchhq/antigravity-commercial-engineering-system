@@ -1,4 +1,42 @@
 # Antigravity Commercial Engineering System
+*Read this in [Ukrainian (Українською)](#-українська-версія)*
+
+This is a commercial-grade architectural system for developing software using AI agents (Google Antigravity). 
+It is designed to force artificial intelligence to work like a professional engineering team: with strict testing, code isolation in branches, and 100% real logs (evidence) of functionality instead of "hallucinations".
+
+## 🚀 What is it?
+The system divides the work among three roles:
+1. **Architect (You + IDE):** You plan the architecture, assign tasks, and make final decisions.
+2. **Coder (Background Agent):** Writes code in an isolated Git branch.
+3. **Hostile Reviewer (Strict Auditor):** An independent agent that reviews the Coder's work, **independently** runs tests, and checks for security vulnerabilities (OWASP).
+
+## 🛠 How to use it in your project
+
+1. **Initialization**
+   Copy all files and folders from this repository (`.agents/`, `docs/`, `project-config.json`) into the root folder of your new project.
+
+2. **Configure Commands (Stack-Agnostic)**
+   Open the `project-config.json` file and enter the terminal commands specific to your stack (e.g., Node.js, Python, .NET). 
+   ```json
+   {
+     "lint_cmd": "npm run lint",
+     "build_cmd": "npm run build",
+     "test_cmd": "npm test",
+     "security_cmd": "npm audit"
+   }
+   ```
+   *Note: If a check is configured as `null`, the system will BLOCK verification, demanding a real command.*
+
+3. **Start the Architect**
+   Open your project in the Antigravity IDE and type in the chat:
+   > *"Start the commercial-flow and let's plan a new project"*
+
+4. **Code Approval (Human Gate)**
+   The agents (Coder and Reviewer) will work autonomously in the background (creating branches, writing code, running tests). After verification, you will receive an **Evidence Package** (a report with real test logs). You simply read the report and click the **"Proceed"** button, after which the AI will automatically merge the code into the `main` branch.
+
+---
+
+## 🇺🇦 Українська версія
 
 Це комерційна архітектурна система для розробки програмного забезпечення за допомогою AI-агентів (Google Antigravity). 
 Вона створена для того, щоб змусити штучний інтелект працювати як професійна команда інженерів: із суворим тестуванням, ізоляцією коду в гілках та наданням 100% реальних логів (доказів) працездатності замість "галюцинацій".
