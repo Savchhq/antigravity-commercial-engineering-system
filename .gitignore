@@ -1,0 +1,26 @@
+# Environments
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & Evidence Scratch
+*.log
+npm-debug.log*
+.agents/scratch/

@@ -2,5 +2,14 @@
   "lint_cmd": null,
   "build_cmd": null,
   "test_cmd": null,
-  "security_cmd": null
+  "security_cmd": null,
+  "coverage_threshold_percent": 80,
+  "high_risk_paths": [
+    "auth/",
+    "payments/",
+    "db/",
+    "migrations/",
+    "security/",
+    ".github/"
+  ]
 }
